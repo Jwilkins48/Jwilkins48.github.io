@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    background-color: #09083f;
+    font-family: 'Tiro Devanagari Sanskrit', serif;
+    color: #9291f5;
+}
+.headerContainer{
+    background-color: #2d2c5a;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardListContainer{
+    /* display: grid;
+    grid-template-columns: repeat(3, 34%);
+    margin: 10px; */
+
 }

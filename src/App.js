@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import CardList from "./components/CardList";
+import { useState } from 'react';
+import ImageData from './data/ImageData';
+// import arrayShuffle from 'array-shuffle';
 
 function App() {
+
+  const [imgData, setImgData] = useState(ImageData)
+  // const [gamePieces, setGamePieces] = useState([]);
+  // const [clickedCards, setClickedCards] = useState([]);
+  // const [currentScore, setCurrentScore] = useState([]);
+  // const [highScore, setHighScore] = useState([]);
+
+  // const shuffleCards = () => {
+  //   const shuffledCards = [...]
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <CardList imgData={imgData} />
     </div>
   );
 }
