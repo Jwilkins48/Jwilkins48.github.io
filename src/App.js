@@ -5,17 +5,20 @@ import ImageData from './data/ImageData';
 
 
 function App() {
-
   const [imgData, setImgData] = useState(ImageData)
-  // const [gamePieces, setGamePieces] = useState([]);
-  // const [clickedCards, setClickedCards] = useState([]);
-  // const [currentScore, setCurrentScore] = useState([]);
-  // const [highScore, setHighScore] = useState([]);
+
+  const shuffleWords = () => {
+    for (let i = imgData.length; --i;)  {
+        let j = Math.floor(Math.random() * (i + 1));
+        [imgData[i], imgData[j]] = [imgData[j], imgData[i]]
+    }
+    setImgData([...imgData]);
+}
 
   return (
     <div className="App">
       <Header />
-      <CardList imgData={imgData} />
+      <CardList shuffleWords={shuffleWords} imgData={imgData} />
     </div>
   );
 }
