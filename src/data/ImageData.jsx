@@ -2,13 +2,13 @@ const ImageData = [
     {
         id: 1,
         name: 'BondSmith',
-        src: 'images/bondsmith.png',
+        src: 'images/bondsmith.webp',
         clicked: false,
     },
     {
         id: 2,
         name: 'EdgeDancer',
-        src: 'images/edgedancer.png',
+        src: 'images/edgedancer.webp',
         clicked: false,
     },
     {
@@ -26,13 +26,13 @@ const ImageData = [
     {
         id: 5,
         name: 'TruthWatcher',
-        src: 'images/truthwatcher.jpg',
+        src: 'images/truthwatcher.webp',
         clicked: false,
     },
     {
         id: 6,
         name: 'WindRunner',
-        src: 'images/windrunner.jpg',
+        src: 'images/windrunner.png',
         clicked: false,
     },
 ]
