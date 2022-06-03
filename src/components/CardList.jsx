@@ -1,12 +1,12 @@
 import React from 'react'
 import Card from './Card'
 
-function CardList({imgData, shuffleWords}) {
+function CardList({imgData, handleClick}) {
 
   return (
     <div  className='cardListContainer'>
         {imgData.map((item) => (
-          <Card key={item.id} item={item} shuffleWords={shuffleWords} />
+          <Card key={item.id} item={item} handleClick={handleClick} />
         ))}
     </div>
   )
