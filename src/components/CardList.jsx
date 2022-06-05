@@ -4,7 +4,7 @@ import Card from './Card'
 function CardList({imgData, handleClick}) {
 
   return (
-    <div  className='cardListContainer'>
+    <div className='cardListContainer'>
         {imgData.map((item) => (
           <Card key={item.id} item={item} handleClick={handleClick} />
         ))}
