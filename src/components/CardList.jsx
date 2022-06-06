@@ -1,12 +1,13 @@
 import React from 'react'
-import Card from './Card'
 
 function CardList({imgData, handleClick}) {
 
   return (
     <div className='cardListContainer'>
         {imgData.map((item) => (
-          <Card key={item.id} item={item} handleClick={handleClick} />
+          <div key={item.id} id={item.id} onClick={() => handleClick(item.id)} className='cardContainer'>
+            <img width='200px' height='195px' src={item.src} alt={item.name}></img>
+          </div>
         ))}
     </div>
   )

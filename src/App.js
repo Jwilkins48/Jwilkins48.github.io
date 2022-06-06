@@ -6,11 +6,10 @@ import ScoreBoard from "./components/ScoreBoard";
 
 function App() {
   const [imgData, setImgData] = useState(ImageData)
-  const [isChecked, setIsChecked] = useState(false);
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
 
-  const shuffleArray = () => {
+  const shuffleArray = (e) => {
     for (let i = imgData.length; --i;)  {
         let j = Math.floor(Math.random() * (i + 1));
         [imgData[i], imgData[j]] = [imgData[j], imgData[i]]
@@ -32,11 +31,12 @@ function App() {
         imgData.forEach(item => (item.clicked = false));
       }
     })
+    console.log(id);
   }
 
-  const handleClick = () => {
-    handleScore();
+  const handleClick = (id) => {
     shuffleArray();
+    handleScore(id)
   }
 
   return (
