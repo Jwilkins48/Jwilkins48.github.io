@@ -10,22 +10,39 @@
 body{
     background-color: #09083f;
     font-family: 'Tiro Devanagari Sanskrit', serif;
-    color: #9291f5;
+    color: #aeadf5;
     background-image: url('../public/images/stormfather.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .headerContainer{
     background-color: #142235;
-    height: 100px;
+    height: 105px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.scoreContainer{
+    text-align: center;
+    background-color: #142235;
+    width: 18%;
+    margin: auto;
+    border: 1px solid #666562;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    font-size: 23px;
+    padding: 6px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    /* font-weight: bold; */
+}
+.highScore{
+    margin: 5px;
+}
 .cardListContainer{
     display: flex;
     justify-content: space-around;
-    height: 100vh;
+    height: 85vh;
     align-items: center;
 }
 .cardContainer{

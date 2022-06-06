@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ScoreBoard score={score} />
+      <ScoreBoard score={score} highScore={highScore} />
       <CardList handleClick={handleClick} imgData={imgData} />
     </div>
   );
