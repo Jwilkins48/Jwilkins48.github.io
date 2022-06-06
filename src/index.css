@@ -45,6 +45,10 @@ body{
     height: 85vh;
     align-items: center;
 }
+.cardContainer:hover{
+    transform: scale(101%);
+    box-shadow: #989e433b 0px 6px 6px, #b7b9963b  2px 0px 6px 6px;
+}
 .cardContainer{
     display: flex;
     align-items: center;
