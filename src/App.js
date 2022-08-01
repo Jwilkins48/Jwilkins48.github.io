@@ -27,7 +27,6 @@ function App() {
           setHighScore(score)
         }
         setScore(0);
-        item.clicked = true;
         imgData.forEach(item => (item.clicked = false));
       }
     })
